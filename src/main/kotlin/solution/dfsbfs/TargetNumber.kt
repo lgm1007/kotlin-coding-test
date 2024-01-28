@@ -3,6 +3,7 @@ package solution.dfsbfs
 import java.util.*
 
 class TargetNumber {
+    // https://school.programmers.co.kr/learn/courses/30/lessons/43165
     fun solution(numbers: IntArray, target: Int): Int {
         return bfs(numbers, target);
     }

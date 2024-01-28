@@ -1,6 +1,7 @@
 package solution.greedy
 
 class StolenGymClothes {
+    // https://school.programmers.co.kr/learn/courses/30/lessons/42862
     fun solution(n: Int, lost: IntArray, reserve: IntArray): Int {
         lost.sort()
         reserve.sort()
