@@ -2,10 +2,7 @@ package practice
 
 import org.junit.jupiter.api.DisplayName
 import org.junit.jupiter.api.Test
-import solution.practice.BlindPhoneNumber
-import solution.practice.CaesarCipher
-import solution.practice.DefenceGame
-import solution.practice.YearningScore
+import solution.practice.*
 import kotlin.test.assertEquals
 
 class PracticeTest {
@@ -14,6 +11,7 @@ class PracticeTest {
     private val blindPhoneNumber = BlindPhoneNumber()
     private val defenceGame = DefenceGame()
     private val caesarCipher = CaesarCipher()
+    private val trioProblem = TrioProblem()
 
     @Test
     @DisplayName("연습문제 - 추억 점수(https://school.programmers.co.kr/learn/courses/30/lessons/176963)")
@@ -40,5 +38,11 @@ class PracticeTest {
     @DisplayName("연습문제 - 시저 암호(https://school.programmers.co.kr/learn/courses/30/lessons/12926)")
     fun caesarCipherTest() {
         assertEquals("e F d", caesarCipher.solution("a B z", 4))
+    }
+
+    @Test
+    @DisplayName("연습문제 - 삼총사(https://school.programmers.co.kr/learn/courses/30/lessons/131705)")
+    fun trioProblemTest() {
+        assertEquals(5, trioProblem.solution(intArrayOf(-3, -2, -1, 0, 1, 2, 3)))
     }
 }
