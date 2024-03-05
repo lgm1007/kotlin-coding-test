@@ -12,6 +12,7 @@ class PracticeTest {
     private val defenceGame = DefenceGame()
     private val caesarCipher = CaesarCipher()
     private val trioProblem = TrioProblem()
+    private val collartz = Collartz()
 
     @Test
     @DisplayName("연습문제 - 추억 점수(https://school.programmers.co.kr/learn/courses/30/lessons/176963)")
@@ -44,5 +45,11 @@ class PracticeTest {
     @DisplayName("연습문제 - 삼총사(https://school.programmers.co.kr/learn/courses/30/lessons/131705)")
     fun trioProblemTest() {
         assertEquals(5, trioProblem.solution(intArrayOf(-3, -2, -1, 0, 1, 2, 3)))
+    }
+
+    @Test
+    @DisplayName("연습문제 - 콜라츠 추측(https://school.programmers.co.kr/learn/courses/30/lessons/12943)")
+    fun collartzTest() {
+        assertEquals(8, collartz.solution(6))
     }
 }
