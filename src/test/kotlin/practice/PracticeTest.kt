@@ -13,6 +13,7 @@ class PracticeTest {
     private val caesarCipher = CaesarCipher()
     private val trioProblem = TrioProblem()
     private val collartz = Collartz()
+    private val jadenCase = JadenCase()
 
     @Test
     @DisplayName("연습문제 - 추억 점수(https://school.programmers.co.kr/learn/courses/30/lessons/176963)")
@@ -51,5 +52,11 @@ class PracticeTest {
     @DisplayName("연습문제 - 콜라츠 추측(https://school.programmers.co.kr/learn/courses/30/lessons/12943)")
     fun collartzTest() {
         assertEquals(8, collartz.solution(6))
+    }
+
+    @Test
+    @DisplayName("연습문제 - JadenCase 문자열 만들기(https://school.programmers.co.kr/learn/courses/30/lessons/12951)")
+    fun jadenCaseTest() {
+        assertEquals("3people Unfollowed Me", jadenCase.solution("3people unFollowed me"))
     }
 }
