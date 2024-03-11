@@ -14,6 +14,7 @@ class PracticeTest {
     private val trioProblem = TrioProblem()
     private val collartz = Collartz()
     private val jadenCase = JadenCase()
+    private val foodFight = FoodFight()
 
     @Test
     @DisplayName("연습문제 - 추억 점수(https://school.programmers.co.kr/learn/courses/30/lessons/176963)")
@@ -58,5 +59,11 @@ class PracticeTest {
     @DisplayName("연습문제 - JadenCase 문자열 만들기(https://school.programmers.co.kr/learn/courses/30/lessons/12951)")
     fun jadenCaseTest() {
         assertEquals("3people Unfollowed Me", jadenCase.solution("3people unFollowed me"))
+    }
+
+    @Test
+    @DisplayName("연습문제 - 푸드파이트 대회(https://school.programmers.co.kr/learn/courses/30/lessons/134240)")
+    fun foodFightTest() {
+        assertEquals("111303111", foodFight.solution(intArrayOf(1, 7, 1, 2)))
     }
 }
