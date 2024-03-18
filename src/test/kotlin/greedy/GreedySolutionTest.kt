@@ -18,7 +18,7 @@ class GreedySolutionTest {
     }
 
     @Test
-    @DisplayName("탐욕법 - 도난당한 체육복 (https://school.programmers.co.kr/learn/courses/30/lessons/42862)")
+    @DisplayName("탐욕법 - 큰 수 만들기 (https://school.programmers.co.kr/learn/courses/30/lessons/42883)")
     fun makeBiggestNumberTest() {
         assertEquals("3234", makeBiggestNumber.solution("1231234", 3))
     }
