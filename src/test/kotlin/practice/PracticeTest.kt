@@ -15,6 +15,7 @@ class PracticeTest {
     private val collartz = Collartz()
     private val jadenCase = JadenCase()
     private val foodFight = FoodFight()
+    private val circularSequence = CircularSequence()
 
     @Test
     @DisplayName("연습문제 - 추억 점수(https://school.programmers.co.kr/learn/courses/30/lessons/176963)")
@@ -65,5 +66,11 @@ class PracticeTest {
     @DisplayName("연습문제 - 푸드파이트 대회(https://school.programmers.co.kr/learn/courses/30/lessons/134240)")
     fun foodFightTest() {
         assertEquals("111303111", foodFight.solution(intArrayOf(1, 7, 1, 2)))
+    }
+
+    @Test
+    @DisplayName("연습문제 - 연속 부분 수열 합의 개수(https://school.programmers.co.kr/learn/courses/30/lessons/131701)")
+    fun circularSequenceTest() {
+        assertEquals(18, circularSequence.solution(intArrayOf(7, 9, 1, 1, 4)))
     }
 }
