@@ -1,5 +1,6 @@
 package practice
 
+import io.kotest.inspectors.buildAssertionError
 import org.junit.jupiter.api.DisplayName
 import org.junit.jupiter.api.Test
 import solution.practice.*
@@ -16,6 +17,7 @@ class PracticeTest {
     private val jadenCase = JadenCase()
     private val foodFight = FoodFight()
     private val circularSequence = CircularSequence()
+    private val knightWeapon = KnightWeapon()
 
     @Test
     @DisplayName("연습문제 - 추억 점수(https://school.programmers.co.kr/learn/courses/30/lessons/176963)")
@@ -72,5 +74,11 @@ class PracticeTest {
     @DisplayName("연습문제 - 연속 부분 수열 합의 개수(https://school.programmers.co.kr/learn/courses/30/lessons/131701)")
     fun circularSequenceTest() {
         assertEquals(18, circularSequence.solution(intArrayOf(7, 9, 1, 1, 4)))
+    }
+
+    @Test
+    @DisplayName("연습문제 - 기사단원의 무기(https://school.programmers.co.kr/learn/courses/30/lessons/136798)")
+    fun knightWeaponTest() {
+        assertEquals(10, knightWeapon.solution(5, 3, 2))
     }
 }
