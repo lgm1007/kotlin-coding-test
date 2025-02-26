@@ -1,6 +1,5 @@
 package practice
 
-import io.kotest.inspectors.buildAssertionError
 import org.junit.jupiter.api.DisplayName
 import org.junit.jupiter.api.Test
 import solution.practice.*
